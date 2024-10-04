@@ -1,0 +1,159 @@
+
+.header {
+    width: 327px;
+    margin: 0 auto;
+    padding: 26px 0px;
+    display: flex;
+    justify-content: right;
+}
+  
+.headerInside {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+        transition: color 0.3s ease;
+        width: 20px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+
+    input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: #A729F5;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #A729F5;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+}
+
+.dark {
+    background-color: #313E51;
+    background-image: url(/images/background-dark.png);
+    background-repeat: no-repeat;
+    background-position:top right;
+    
+    .headerInside img {
+        filter: brightness(0) invert(1);
+    }
+    
+    .mainpageText {
+        h1 {
+            color: #FFFFFF;
+        }
+    
+        p {
+            color: #ABC1E1;
+        }
+    }
+
+    .categories {
+        li {
+            background-color: #3B4D66;
+            box-shadow: 0px 16px 40px 0px #313E5124;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+    
+        li:hover {
+            background-color: #35455a;
+        }
+    
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    .questions {
+        p {
+            color: #ABC1E1;
+        }
+    
+        h3 {
+            color: #FFFFFF;
+        }
+    }
+    
+    .options {
+        .optionSection button {
+            color: #FFFFFF;
+            background-color: #3B4D66;
+            box-shadow: 0px 16px 40px 0px #313E5124;
+        }
+        
+        .optionSection span {
+            color: #626C7F;
+            background-color: #F4F6FA;
+        }
+    }
+
+    .scoreText {
+        h1 {
+            color: #FFFFFF;
+        }
+    }
+    
+    .scoreBoard {
+        background-color: #3B4D66;
+        box-shadow: 0px 16px 40px 0px #313E5124;
+
+        .title {
+            h2 {
+                color: #FFFFFF;
+            }
+        }
+    
+        h1 {
+            color: #FFFFFF;
+        }
+    
+        p {
+            color: #ABC1E1;
+        }
+    }
+}

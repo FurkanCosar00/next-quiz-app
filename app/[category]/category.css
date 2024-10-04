@@ -1,0 +1,108 @@
+.questions {
+    p {
+        color: #626C7F;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        margin-bottom: 12px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    h3 {
+        color: #313E51;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 40px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+}
+
+.options {
+    .optionSection {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .optionSection button {
+        height: 64px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 16px 40px 0px #8FA0C124;
+        width: 327px;
+        padding: 12px;
+        border-radius: 12px;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border: 3px solid transparent;
+    }
+    
+    .optionSection span {
+        background-color: #F4F6FA;
+        color: #626C7F;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        padding: 11px 14px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .optionSection button:focus {
+        border: 3px solid #A729F5;
+
+        span {
+            background-color: #A729F5;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.submitSection {
+    button {
+        color: #FFFFFF;
+        background-color: #A729F5;
+        height: 56px;
+        box-shadow: 0px 16px 40px 0px #8FA0C124;
+        width: 327px;
+        padding: 12px;
+        border-radius: 12px;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 12px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #d394fa;
+    }
+
+    .error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        p {
+            color: #EE5454;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+        }
+    }
+}
