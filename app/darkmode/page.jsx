@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function DarkMode() {
@@ -15,14 +16,14 @@ export default function DarkMode() {
   
     return (
       <div className="headerInside">
-        <img src="/images/dark-mode-sun.png" alt="" />
+        <Image src="/images/dark-mode-sun.png" alt="" width={24} height={24}></Image>
   
         <label className="switch">
           <input type="checkbox" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}/>
           <span className="slider round"></span>
         </label>
   
-        <img src="/images/dark-mode-moon.png" alt="" />
+        <Image src="/images/dark-mode-moon.png" alt="" width={24} height={24}></Image>
       </div>
     )
 }

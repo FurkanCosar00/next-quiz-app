@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function FinishPage({ score, dataCategory }) {
@@ -10,7 +11,7 @@ export default function FinishPage({ score, dataCategory }) {
         <div className="score">
           <div className="scoreBoard">
             <div className="title">
-              <img src={dataCategory.icon} alt="" />
+              <Image src={dataCategory.icon} alt="" width={56} height={56}></Image>
               <h2>{dataCategory.category}</h2>
             </div>
     

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import data from "/app/data.json";
 import FinishPage from "/app/finishpage/page.jsx";
+import Image from "next/image";
 
 export default function DataCategory({ params }) {
   const { category } = params;
@@ -88,7 +89,7 @@ export default function DataCategory({ params }) {
 
               {!isSelected ?
                 <div className="error">
-                  <img src="/images/select-error.png" alt="" />
+                  <Image src="/images/select-error.png" alt="" width={30} height={30}></Image>
                   <p>Please select an answer</p>
                 </div>
                 :

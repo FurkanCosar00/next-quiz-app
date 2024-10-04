@@ -13,7 +13,7 @@ export default function Home() {
         {data.questionAndAnswers.map((quiz, index) =>
           <li key={index}>
             <Link href={`/${quiz.category}`}>
-              <img src={quiz.icon} alt="" />
+              <Image src={quiz.icon} alt="" width={56} height={56}></Image>
               <p>{quiz.category}</p>
             </Link>
           </li>
